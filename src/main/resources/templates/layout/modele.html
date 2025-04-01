@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="${title}">Page</title>
+  <link rel="stylesheet" th:href="@{/css/modele.css}">
+</head>
+<body>
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Export</h2>
+  <ul>
+    <li><a th:href="@{/}">Export CSV</a></li>
+    <li><a th:href="@{/export_json}">Export JSON</a></li>
+    <li><a th:href="@{/export_pdf}">Export PDF</a></li>
+  </ul>
+</div>
+
+<!-- Header -->
+<div class="header"></div>
+
+<div class="content">
+  <div th:include="${view}"></div>
+</div>
+</body>
+</html>
