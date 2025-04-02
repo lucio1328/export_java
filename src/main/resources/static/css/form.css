@@ -1,0 +1,10 @@
+.conteneur {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.conteneur h2 {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #2c3e50;
+}

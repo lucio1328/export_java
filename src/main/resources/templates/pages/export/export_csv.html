@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Export CSV</title>
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" th:href="@{/css/form.css}">
 </head>
 <body>
-
+    <div class="conteneur">
+        <h2>Export CSV</h2>
+        <form action="/export_csv" method="post">
+            <label for="model">Selectionnez un modèle :</label>
+            <select name="model" id="model" required>
+                <option value="users">Utilisateurs</option>
+                <option value="genre">Genre</option>
+            </select>
+            <button type="submit">Exporter</button>
+        </form>
+    </div>
 </body>
 </html>
