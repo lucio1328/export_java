@@ -77,11 +77,11 @@ public class Users {
         this.mdp = mdp;
     }
 
-    public Genre getIdGenre() {
+    public Genre getGenre() {
         return genre;
     }
 
-    public void setIdGenre(Genre idGenre) {
+    public void setGenre(Genre idGenre) {
         this.genre = idGenre;
     }
 
